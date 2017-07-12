@@ -1,0 +1,48 @@
+.adpicker{
+  position: relative;
+  overflow: auto;
+}
+.pickerHeader{
+  //box-shadow: 1px 1px 1px #666;
+  border-bottom: 1px solid #ccc;
+}
+.addressList{
+  text-align: center;
+  overflow: auto;
+  max-height: 10.6666667rem;
+  display:none;
+}
+.zoneList{
+  text-align: center;
+  overflow: scroll;
+  max-height: 10.6666667rem;
+  display:none;
+}
+.cityList{
+  text-align: center;
+  overflow: scroll;
+  max-height: 10.6666667rem;
+  display:none;
+}
+.addressItem{
+  margin:10px 0;
+  //border-bottom: 1px solid #ff9500;
+  transition: all .3s;
+  &:active{
+    background: rgba(0,0,0,.1);
+  }
+}
+
+.addressActive{
+  display: block;
+
+}
+.selectedAddressActive{
+  display: inline-block;
+  padding-top:10px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #ff9500;
+}
+.selectedProvince .selectedCity .selectedZone{
+  display: inline-block;
+}
